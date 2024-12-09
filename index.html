@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Program Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find the Perfect University Program</h1>
+        <p class="description">Enter your details below to get personalized program recommendations.</p>
+        
+        <form id="studentForm">
+            <div class="input-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="grades">Your Grades (e.g., Math: A, English: B):</label>
+                <input type="text" id="grades" name="grades" placeholder="Enter your grades" required>
+            </div>
+
+            <div class="input-group">
+                <label for="interests">Your Interests (e.g., Technology, Debate):</label>
+                <input type="text" id="interests" name="interests" placeholder="Enter your interests" required>
+            </div>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <div id="recommendations" class="recommendations">
+            <!-- Recommendations will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
